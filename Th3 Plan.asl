@@ -1,13 +1,11 @@
-// Th3 Plan 1.0.0 Autosplitter 8/8/2023
-// Supports RTA
+// Th3 Plan 1.2.0 Autosplitter 11/8/2023
+// Supports IGT
 // Pointers and Script <by> ||LeonSReckon||
 
 state("Main")
 {
-	byte lvl: 0x22F654, 0x68, 0x5AC;
-	byte Load: 0x1C472C, 0x5D8, 0x0, 0x4, 0x14, 0x10, 0xD8C;
-	byte Screen: 0x1C33BC, 0x4, 0x1CC, 0x4, 0x58, 0x44, 0xB08;
-	float PPos: 0x21F060, 0x0;
+	byte lvl: 0x128064, 0x2C, 0x28, 0xF0, 0x15C;
+	byte Screen: 0x1F8B70, 0x1C, 0x14, 0x4, 0x14, 0x10, 0xD8C;
 	float IGT: 0x1C3F40, 0xC0, 0x6A4;
 	float bar: 0x1C34E8, 0x618;
 }
@@ -51,5 +49,5 @@ gameTime
 
 reset
 {
-	return current.PPos == 0 && current.Load == 0 && current.Screen == 0 && current.lvl == 14;
+	return current.Screen == 0 && current.lvl == 14;
 }
