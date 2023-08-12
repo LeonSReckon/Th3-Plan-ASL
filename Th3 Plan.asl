@@ -1,7 +1,7 @@
 // Th3 Plan 1.2.0 Autosplitter 11/8/2023
 // Supports IGT
 // Pointers and Script <by> ||LeonSReckon||
-// Thanks to thedementedsalad for helping whenever I had a problem or a question
+// Thanks to TheDementedSalad for helping whenever I had a problem or a question
 
 state("Main")
 {
