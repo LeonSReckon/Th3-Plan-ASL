@@ -1,6 +1,7 @@
 // Th3 Plan 1.2.0 Autosplitter 11/8/2023
 // Supports IGT
 // Pointers and Script <by> ||LeonSReckon||
+// Thanks to thedementedsalad for helping whenever I had a problem or a question
 
 state("Main")
 {
@@ -39,11 +40,7 @@ isLoading
 gameTime
 {
 	if(current.IGT > old.IGT){
-		return TimeSpan.FromSeconds(Math.Floor(vars.totalGameTime + current.IGT));
-	}
-	if(current.IGT == 0 && old.IGT > 0){
-			vars.totalGameTime = System.Math.Floor(vars.totalGameTime + old.IGT);
-			return TimeSpan.FromSeconds(System.Math.Floor(vars.totalGameTime + current.IGT));
+			return TimeSpan.FromSeconds(current.IGT);
 		}
 }
 
